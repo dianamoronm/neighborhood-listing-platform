@@ -206,4 +206,5 @@ Manual test: Resize browser and confirm list remains readable and structured.
 I tested the aria-label fix using NVDA’s Links List. Each link now announces the property name, improving clarity. I also tested the focus ring visually and confirmed improved contrast with the offset ring.
 
 **Commit Applied:**
-(Write your commit hash here after you apply the fix)
+Commit:
+1b23bec
