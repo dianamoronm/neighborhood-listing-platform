@@ -24,11 +24,14 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         <li>{property.sqft} sq ft</li>
       </ul>
       <a
-        href="#"
-        className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
-      >
-        View property details
-      </a>
+  href={`/properties/${property.id}`}
+  aria-label={`View property details for ${property.name}`}
+  className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600"
+>
+  View property details
+  <span className="sr-only"> for {property.name}</span>
+</a>
+
     </article>
   );
 };
