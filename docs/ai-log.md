@@ -208,3 +208,19 @@ I tested the aria-label fix using NVDA’s Links List. Each link now announces t
 **Commit Applied:**
 Commit:
 1b23bec
+WEEK 6 CONTEXTUAL SPONSOR MATCHING ENGINE
+Prompt: Act as an adversarial tester for this contextual sponsor-selection function. Generate boundary cases involving dates, ZIP codes, empty data, ties, unapproved records, and unsafe URLs. Do not propose user profiling.
+
+Useful output:
+
+Expired campaign
+Inactive sponsor
+No ZIP match
+Tie-breaking scenarios
+Empty sponsor list
+Rejected output:
+
+Demographic targeting
+User profiling
+Sensitive-trait targeting
+Verification: Converted valid edge cases into automated tests using Vitest. Verified deterministic outcomes with fixed sponsor fixtures.
