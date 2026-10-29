@@ -22,3 +22,9 @@ PredictablenProperties
 The same inputs always return the same sponsor.
 Inactive sponsors are never selected.
 Lower-priority values consistently win tie situations.
+FALLBACK BEHAVIOR IN WEEk 6 LAB
+if no sponsor meets eligibility requirements, the platform displays:
+
+Local Partner
+
+Support your community businesses.

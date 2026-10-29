@@ -1,0 +1,112 @@
+[
+  {
+    "property_id": "prop-001",
+    "address": {
+      "street": "123 Maple Street",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "90001"
+    },
+    "price": 725000,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "square_feet": 1450,
+    "amenities": ["garage", "central_air", "hardwood_floors"],
+    "zip_code": "90001",
+    "local_sponsors": [
+      {
+        "sponsor_id": "s-001",
+        "name": "Sunrise Realty Group",
+        "type": "lender"
+      }
+    ]
+  },
+  {
+    "property_id": "prop-002",
+    "address": {
+      "street": "456 Oak Ridge Drive",
+      "city": "Pasadena",
+      "state": "CA",
+      "zip_code": "91104"
+    },
+    "price": 899000,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "square_feet": 2100,
+    "amenities": ["pool", "solar_panels", "updated_kitchen"],
+    "zip_code": "91104",
+    "local_sponsors": [
+      {
+        "sponsor_id": "s-002",
+        "name": "Golden Key Properties",
+        "type": "insurer"
+      }
+    ]
+  },
+  {
+    "property_id": "prop-003",
+    "address": {
+      "street": "789 Sunset Canyon Blvd",
+      "city": "Burbank",
+      "state": "CA",
+      "zip_code": "91505"
+    },
+    "price": 640000,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "square_feet": 1200,
+    "amenities": ["gym", "covered_parking"],
+    "zip_code": "91505",
+    "local_sponsors": [
+      {
+        "sponsor_id": "s-003",
+        "name": "MetroLiving Homes",
+        "type": "mover"
+      }
+    ]
+  },
+  {
+    "property_id": "prop-004",
+    "address": {
+      "street": "1010 Highland View Court",
+      "city": "Glendale",
+      "state": "CA",
+      "zip_code": "91205"
+    },
+    "price": 510000,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "square_feet": 800,
+    "amenities": ["pet_friendly", "in_unit_laundry"],
+    "zip_code": "91205",
+    "local_sponsors": [
+      {
+        "sponsor_id": "s-004",
+        "name": "UrbanNest Rentals",
+        "type": "other"
+      }
+    ]
+  },
+  {
+    "property_id": "prop-005",
+    "address": {
+      "street": "222 Valley Crest Lane",
+      "city": "Alhambra",
+      "state": "CA",
+      "zip_code": "91801"
+    },
+    "price": 780000,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "square_feet": 1600,
+    "amenities": ["community_pool", "private_patio"],
+    "zip_code": "91801",
+    "local_sponsors": [
+      {
+        "sponsor_id": "s-005",
+        "name": "Horizon Residential",
+        "type": "lender"
+      }
+    ]
+  }
+]
