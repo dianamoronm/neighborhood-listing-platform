@@ -61,11 +61,11 @@ export default function Page() {
     <main className="min-h-screen bg-slate-100 p-6">
       <header className="mb-8 text-center">
         <h1 className="text-4xl font-bold text-gray-900">
-          CivicNest
+          Neighborhood Property Hub
         </h1>
 
         <p className="text-lg text-gray-600 mt-2">
-          Neighborhood Property Hub
+          Browse local listings and sponsor neighborhood services
         </p>
       </header>
 
