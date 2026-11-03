@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { Property, Sponsor } from "../types";
 import { PropertyCard } from "../components/PropertyCard";
@@ -49,26 +50,38 @@ const properties: Property[] = [
 ];
 
 export default function Page() {
-  const handleFiltersSubmit = (filters: { minBeds: string; maxPrice: string }) => {
+  const handleFiltersSubmit = (filters: {
+    minBeds: string;
+    maxPrice: string;
+  }) => {
     console.log("Filters applied:", filters);
   };
 
   return (
-    <main className="min-h-screen bg-gray-50 p-4">
-      <header className="mb-4">
-        <h1 className="text-2xl font-bold">Property Listings</h1>
+    <main className="min-h-screen bg-slate-100 p-6">
+      <header className="mb-8 text-center">
+        <h1 className="text-4xl font-bold text-gray-900">
+          CivicNest
+        </h1>
+
+        <p className="text-lg text-gray-600 mt-2">
+          Neighborhood Property Hub
+        </p>
       </header>
 
       <SearchFilters onSubmit={handleFiltersSubmit} />
 
       <section
         aria-label="Property results"
-        className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
         {properties.map((property) => (
           <div key={property.id}>
             <PropertyCard property={property} />
-            {property.sponsor && <SponsorBanner sponsor={property.sponsor} />}
+
+            {property.sponsor && (
+              <SponsorBanner sponsor={property.sponsor} />
+            )}
           </div>
         ))}
       </section>
