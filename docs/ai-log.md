@@ -1,6 +1,12 @@
-| Tool | Prompt | Output Used | Output Rejected | Verification | Commit |
-|------|--------|-------------|-----------------|-------------|--------|
-| Cursor | "Generate Next.js app shell" | Yes | No | App runs locally | Added initial app shell |
-| Cursor | "Fix lint errors" | Yes | No | npm run lint passes | Lint fixes committed |
-| Cursor | "Explain build error" | Yes | No | npm run build passes | Build fixes committed |
+# AI Provenance Journal
 
+| Step / Tool | Exact Prompt Summary | Model Output Used | Model Output Rejected & Technical Justification | Verification Method | Associated Git Commit |
+|------------|------------|------------|------------|------------|------------|
+| Cursor | Generate Next.js application shell and project structure. | Initial application shell and project scaffolding. | None. | Verified application ran successfully in local development environment. | Initial app shell commit |
+| Cursor | Fix lint errors across project files. | Recommended lint corrections and code cleanup. | None. | Verified using `npm run lint` with no errors. | Lint fixes committed |
+| Cursor | Explain build failures and deployment issues. | Build troubleshooting guidance and dependency analysis. | None. | Verified using successful local builds and deployment troubleshooting. | Build fixes committed |
+| ChatGPT | Review repository against Midterm Practical Examination requirements and identify missing deliverables. | Requirements audit, traceability matrix guidance, deployment troubleshooting, Git workflow review, security audit recommendations. | Suggestions involving additional deployment dependencies were rejected when they introduced unnecessary complexity or deployment failures. | Verified using Git history, successful Vercel deployment, local testing, and clean Git status. | ef12445, 000ed96, 5593462, 334b0fa |
+| ChatGPT | Generate a requirements traceability matrix aligned to exam requirements. | Traceability matrix content adapted into `docs/traceability-matrix.md`. | None. | Verified against Lab 1–6 requirements and repository artifacts. | ef12445 |
+| ChatGPT | Troubleshoot Vercel deployment failures and dependency conflicts. | Identified Vitest dependency conflicts, deployment blockers, routing issues, and build configuration fixes. | Strategy of keeping test files active in production deployment was rejected because test execution was unnecessary and caused build failures. | Verified through successful Vercel deployment status of Ready. | 5593462, 334b0fa, 2ac4baa |
+| Gemini | Review PropertyCard component for accessibility issues. | Recommendations related to ARIA labels, focus indicators, link clarity, and semantic structure. | None. | Verified through keyboard navigation testing, accessibility inspection, and component review. | 1b23bec |
+| ChatGPT | Review security posture and Git hygiene for submission readiness. | Secret quarantine review, `.gitignore` verification, credential exposure review, submission checklist validation. | None. | Verified using `git status`, `.gitignore` inspection, repository review, and successful deployment. | Multiple commits |

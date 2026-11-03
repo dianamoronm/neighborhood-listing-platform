@@ -1,0 +1,1 @@
+export { PropertySchema } from "../feature/data-contracts/validator/property.validator";
